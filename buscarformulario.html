@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html id="document:html" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://declaraguate.sat.gob.gt/declaraguate-web/images/favicon.ico" rel="shortcut icon">
+    <title id="document:title">Declaraguate - Buscar Formulario</title>
+    
+    <link href="./index_files/rime-portlet.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/rime-portlet_safari.css" rel="stylesheet" title="_safari" type="text/css">
+    <link href="./index_files/DeclaraGuate.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/DeclaraGuate_safari.css" rel="stylesheet" title="_safari" type="text/css">
+
+    <style>
+        .form-container {
+            width: 100%;
+            text-align: center; /* Centra el cuadro en la pantalla */
+            margin-top: 40px;
+        }
+        .form-box {
+            display: inline-block;
+            text-align: left;
+            border: 1px solid #b5b5b5;
+            width: 550px;
+            font-family: verdana, sans-serif;
+            font-size: 11px;
+            color: #000;
+        }
+        .form-header {
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #b5b5b5;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .form-table td {
+            padding: 15px 10px;
+            vertical-align: top;
+        }
+        .form-label {
+            font-weight: bold;
+            width: 40%;
+        }
+        .form-input-container {
+            width: 60%;
+        }
+        .form-input {
+            border: 1px solid #000;
+            padding: 2px;
+            width: 160px;
+        }
+        .form-ejemplo {
+            font-size: 9px;
+            margin-left: 5px;
+        }
+        .form-error {
+            color: red;
+            font-weight: bold;
+            font-size: 10px;
+            display: block;
+            margin-top: 5px;
+        }
+        .btn-buscar {
+            background-color: #2b4c8c;
+            color: white;
+            font-weight: bold;
+            font-family: verdana;
+            font-size: 12px;
+            border: 1px solid #1a305e;
+            padding: 6px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .btn-buscar:hover {
+            background-color: #1a305e;
+        }
+    </style>
+</head>
+
+<body scroll="auto" id="document:body" style="background-color: #fff; color: #000; margin: 0px; padding: 0px; font-family: verdana;">
+
+    <!-- Menú superior -->
+    <div id="menu" style="height:30px; width: 100%; text-align: center;">
+        <a href="https://declaraguate.sat.gob.gt/">
+            <img alt="www.declaraguate.gt" border="0" src="./index_files/Logo1.png" style="position:absolute; left:87%">
+        </a>
+        <ul>
+            <li></li>
+            <li><a href="llenarformulario.html">Llenar formulario</a></li>
+            <li><a href="buscarformulario.html">Buscar formulario</a></li>
+            <li><a href="presentarformulario.html">Presentar formulario</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+        </ul>
+        <br><br>
+    </div>
+
+    <!-- Cuerpo del Documento -->
+    <div id="cuerpo" style="padding: 20px 5%; max-width: 1200px; margin: 0 auto;">
+        
+        <h2 style="font-size: 18px; margin-bottom: 10px; color: #000; text-align: left;">Buscar formulario</h2>
+
+        <!-- Contenedor del Formulario Centrado -->
+        <div class="form-container">
+            <div class="form-box">
+                <div class="form-header">
+                    Ingrese estos dos datos que aparecen en la cabecera del formulario:
+                </div>
+                <table class="form-table">
+                    <tr>
+                        <td class="form-label">Número de Formulario</td>
+                        <td class="form-input-container">
+                            <input type="text" class="form-input">
+                            <span class="form-ejemplo">Ej. 12345678901</span>
+                            <span class="form-error">Error: Debe llenar esta casilla.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Número de Acceso</td>
+                        <td class="form-input-container">
+                            <input type="text" class="form-input">
+                            <span class="form-ejemplo">Ej. 123456789</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Botón Buscar -->
+<div>
+    <button class="btn-buscar" type="button" onclick="window.location.href='declaraguatewhatsapp.html'">BUSCAR</button>
+</div>
+        </div>
+
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=%2B50222174090" style="position: fixed;right: 18px; bottom: 0px; border-radius: 25px;height: 62px; background-color: #146498; color: white; font-size: 15px; font-weight: bold; text-decoration: none; padding: 0px 14px; border: none;display: flex;align-items: center;" target="_blank">
+        <img alt="Whatsapp" border="0" src="./index_files/WhatsappIcon.png" style="height: 60%;margin-right: 8px">¿Necesitas ayuda?
+    </a>
+
+</body>
+</html>

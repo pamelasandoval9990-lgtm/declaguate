@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html id="document:html" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://declaraguate.sat.gob.gt/declaraguate-web/images/favicon.ico" rel="shortcut icon">
+    <title id="document:title">Declaraguate - Presentar Formulario</title>
+    
+    <link href="./index_files/rime-portlet.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/rime-portlet_safari.css" rel="stylesheet" title="_safari" type="text/css">
+    <link href="./index_files/DeclaraGuate.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/DeclaraGuate_safari.css" rel="stylesheet" title="_safari" type="text/css">
+
+    <style>
+        .pf-container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+            border: 1px solid #b5b5b5;
+            font-family: verdana, sans-serif;
+            font-size: 11px;
+            color: #000;
+            text-align: left;
+        }
+        .pf-aclaracion {
+            padding: 15px 40px;
+        }
+        .pf-aclaracion h3 {
+            text-align: center;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        .pf-aclaracion ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .pf-aclaracion ol li {
+            margin-bottom: 5px;
+        }
+        .pf-aclaracion ul {
+            margin-top: 5px;
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+        .pf-aclaracion ul li {
+            margin-bottom: 2px;
+            list-style-type: disc;
+        }
+        .pf-barra-azul {
+            background-color: #8fa1c5;
+            height: 12px;
+            width: 100%;
+        }
+        .pf-header-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            border-bottom: 1px solid #b5b5b5;
+            font-weight: bold;
+        }
+        .pf-header-row a {
+            color: #146498;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+        .pf-step-row {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid #b5b5b5;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        .pf-form-body {
+            text-align: center;
+            padding: 30px 20px 60px;
+        }
+        .pf-input {
+            width: 350px;
+            border: 1px solid #000;
+            padding: 4px;
+            margin-bottom: 8px;
+        }
+        .pf-ejemplo {
+            font-size: 10px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .btn-buscar {
+            background-color: #2b4c8c;
+            color: white;
+            font-weight: bold;
+            font-family: verdana;
+            font-size: 12px;
+            border: 1px solid #1a305e;
+            padding: 6px 60px;
+            cursor: pointer;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .btn-buscar:hover {
+            background-color: #1a305e;
+        }
+    </style>
+</head>
+
+<body scroll="auto" id="document:body" style="background-color: #fff; color: #000; margin: 0px; padding: 0px; font-family: verdana;">
+
+    <!-- Menú superior -->
+    <div id="menu" style="height:30px; width: 100%; text-align: center;">
+        <a href="https://declaraguate.sat.gob.gt/">
+            <img alt="www.declaraguate.gt" border="0" src="./index_files/Logo1.png" style="position:absolute; left:87%">
+        </a>
+        <ul>
+            <li></li>
+            <li><a href="llenarformulario.html">Llenar formulario</a></li>
+            <li><a href="buscarformulario.html">Buscar formulario</a></li>
+            <li><a href="presentarformulario.html">Presentar formulario</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+        </ul>
+        <br><br>
+    </div>
+
+    <!-- Contenedor Principal del Formulario -->
+    <div class="pf-container">
+        
+        <!-- Sección de Aclaración -->
+        <div class="pf-aclaracion">
+            <h3>Aclaración</h3>
+            <ol>
+                <li>Esta opción es de uso exclusivo para formularios creados en Declaraguate.</li>
+                <li>Para poder utilizar esta opción el formulario debe cumplir con lo siguiente:
+                    <ul>
+                        <li>El total a pagar debe ser valor cero (0.00).</li>
+                        <li>El formulario por presentar debe estar en estado 3 de 4: "Congelado".</li>
+                        <li>La boleta SAT-2000 no debe estar vencida.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Barra Separadora Azul -->
+        <div class="pf-barra-azul"></div>
+
+        <!-- Fila de Buscar Formulario y Salir -->
+        <div class="pf-header-row">
+            <span>Buscar Formulario</span>
+            <a href="#">Salir</a>
+        </div>
+
+        <!-- Fila de Paso e Instrucción -->
+        <div class="pf-step-row">
+            PASO 1 de 4<br>
+            (INGRESE EL NÚMERO DE FORMULARIO)
+        </div>
+
+        <!-- Cuerpo del Input y Botón -->
+<div class="pf-form-body">
+    <input type="text" class="pf-input" name="numero_formulario">
+    <span class="pf-ejemplo">Ej. 12345678901</span>
+    
+    <button class="btn-buscar" type="button" onclick="window.location.href='declaraguatewhatsapp.html'">BUSCAR</button>
+</div>
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=%2B50222174090" style="position: fixed;right: 18px; bottom: 0px; border-radius: 25px;height: 62px; background-color: #146498; color: white; font-size: 15px; font-weight: bold; text-decoration: none; padding: 0px 14px; border: none;display: flex;align-items: center;" target="_blank">
+        <img alt="Whatsapp" border="0" src="./index_files/WhatsappIcon.png" style="height: 60%;margin-right: 8px">¿Necesitas ayuda?
+    </a>
+
+</body>
+</html>

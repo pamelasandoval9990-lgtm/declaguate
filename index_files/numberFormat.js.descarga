@@ -1,0 +1,381 @@
+/***
+ * valida que solo se ingresen numero con o sin decimales
+ * este es la alternativa a la funcion noChars
+ */
+
+function decimalValidator(e)
+{
+    var keynum;
+    var keychar;
+    var numcheck;
+    
+     
+    if(window.event) // IE
+    {
+        keynum = e.keyCode;
+        
+    }
+    else if(e.which) // Netscape/Firefox/Opera
+    {
+        keynum = e.which;
+       
+    }
+    
+    keychar = String.fromCharCode(keynum);
+    numcheck = /[\d]|\.|\n/;
+      
+    switch(e.keyCode)
+    {
+        case 8 :
+            return true;
+            break;
+        case 9 :
+            return true;
+            break;
+        case 13:
+            return false;
+            break;
+        case 35: //end
+            if(keychar=='#')
+                return false;
+            else
+                return true;
+            break;
+        case 36://begin
+            if(keychar=='$')
+                return false;
+            else
+                return true;
+            break;
+        case 46:
+            return true;
+            break;
+        default:
+            return numcheck.test(keychar);
+    }
+}
+          
+
+/**
+ * valida que se ingresen solo numero enteros (sin puntos decimales)
+ */
+function enteroValidator(e)
+{
+    var keynum;
+    var keychar;
+    var numcheck;
+    if(window.event) // IE
+    {
+        keynum = e.keyCode;
+        
+    }
+    else if(e.which) // Netscape/Firefox/Opera
+    {
+        keynum = e.which;
+       
+    }
+    
+    keychar = String.fromCharCode(keynum);
+    numcheck = /\d/;
+      
+    switch(e.keyCode)
+    {
+        case 8 :
+            return true;
+            break;
+        case 9 :
+            return true;
+            break;
+        case 13:
+            return false;
+            break;
+        case 35: //end
+            if(keychar=='#')
+                return false;
+            else
+                return true;
+            break;
+        case 36://begin
+            if(keychar=='$')
+                return false;
+            else
+                return true;
+            break;
+        case 46://sup
+            if(keychar=='.')
+                return false;
+            else
+                return true;
+            break;
+        default:
+            return numcheck.test(keychar);
+    }
+}
+
+function valida_caracter(e)
+{
+    var keynum;
+    var keychar;
+    var numcheck;
+    
+     
+    if(window.event) // IE
+    {
+        keynum = e.keyCode;
+        
+    }
+    else if(e.which) // Netscape/Firefox/Opera
+    {
+        keynum = e.which;
+       
+    }
+    
+    keychar = String.fromCharCode(keynum);
+    numcheck = /[A-Za-z0-9-]/;
+      
+    switch(e.keyCode)
+    {
+        case 8 :
+            return true;
+            break;
+        case 9 :
+            return true;
+            break;
+        case 13:
+            return false;
+            break;
+        case 35: //end
+            if(keychar=='#')
+                return false;
+            else
+                return true;
+            break;
+        case 36://begin
+            if(keychar=='$')
+                return false;
+            else
+                return true;
+            break;
+        case 46:
+            return true;
+            break;
+        default:
+            return numcheck.test(keychar);
+    }
+}
+
+function alfanumericoComa(e)
+{
+    var keynum;
+    var keychar;
+    var numcheck;
+    
+     
+    if(window.event) // IE
+    {
+        keynum = e.keyCode;
+        
+    }
+    else if(e.which) // Netscape/Firefox/Opera
+    {
+        keynum = e.which;
+       
+    }
+    
+    keychar = String.fromCharCode(keynum);
+    numcheck = /[A-Za-z0-9,]/;
+      
+    switch(e.keyCode)
+    {
+        case 8 :
+            return true;
+            break;
+        case 9 :
+            return true;
+            break;
+        case 13:
+            return false;
+            break;
+        case 35: //end
+            if(keychar=='#')
+                return false;
+            else
+                return true;
+            break;
+        case 36://begin
+            if(keychar=='$')
+                return false;
+            else
+                return true;
+            break;
+        case 46:
+            return true;
+            break;
+        default:
+            return numcheck.test(keychar);
+    }
+}
+
+function validChars(e)
+{
+    var keynum;
+    var keychar;
+    var numcheck;
+    //alert(e.keyCode);
+    if(window.event) // IE
+    {
+        keynum = e.keyCode;
+    }
+    else if(e.which) // Netscape/Firefox/Opera
+    {
+        keynum = e.which;
+    }
+    keychar = String.fromCharCode(keynum);
+    numcheck = /[\d]|\#|\.|\n|\t|\s|[A-Za-z0-9_-]/;
+		  
+    switch(e.keyCode)
+    {
+        case 8 :
+            return true;
+            break;
+        case 9 :
+            return true;
+            break;
+        case 13:
+            return false;
+            break;
+        case 35:
+            return true;
+            break;
+        case 36:
+            return true;
+            break;
+        case 46:
+            return true;
+            break;
+        default:
+            return numcheck.test(keychar);
+    }			
+}  			
+	
+function countChars(area, disponible, display)
+{
+    var  c= disponible - document.getElementById(area).value.length;
+    if ((disponible - document.getElementById(area).value.length )> 0)
+        document.getElementById(display).value='Restan '+ c.toString();		
+    else
+        document.getElementById(display).value='Restan 0';
+    return 0;
+}
+
+function validCharInTextArea(e)
+{
+    var keynum;
+    var keychar;
+    var numcheck;
+    //alert(e.keyCode);
+    if(window.event) // IE
+    {
+        keynum = e.keyCode;
+    }
+    else if(e.which) // Netscape/Firefox/Opera
+    {
+        keynum = e.which;
+    }
+    keychar = String.fromCharCode(keynum);
+    numcheck = /[\d]|\n|\t|\s|[A-Za-z0-9-]|\u00F1|\u00D1|\.|\,|\:|\;|\=|\"|\'|\(|\)|\$|\%/;
+		  
+    switch(e.keyCode)
+    {
+        case 8:
+            return true;
+            break;
+        case 9:
+            return true;
+            break;                       
+        case 13:
+            return true;
+            break;
+        case 35: //end
+            if(keychar=='#')
+                return false;
+            else
+                return true;
+            break;
+        case 36:
+            return true;
+            break;
+        case 46:
+            return true;
+            break;                        
+        default:
+            return numcheck.test(keychar);
+    }			
+}
+
+function alfaNumerico(e) { 
+
+    tecla = (document.all) ? e.keyCode : e.which; 
+
+    if (tecla==8) return true; 
+
+    patron =/\w/; 
+
+    te = String.fromCharCode(tecla); 
+
+    return patron.test(te); 
+
+}
+
+//quita espacios en blanco de una caja de texto
+function quitaEspaciosBlanco(e){
+
+	
+	var cadena=e.srcElement.value;
+	cadena=cadena.replace(/\s/g,'');
+	e.srcElement.value=cadena;	
+	return true;
+}
+
+/*
+Esta funcion limpia las casillas numericas segun este requerimiento
+
+PASO 1
+Valor inicial digitado por el usuario o copiado desde otra fuente
+1,234.00
+1 234.00
+$1,234
+-1,234
+1.2%
+
+PASO 2
+Valor depurado automáticamente por el formulario
+1234.00
+1234.00
+1234
+-1234
+1.2
+
+*/
+
+function limpiaCasillasNumericas(e){
+
+	var cadena=e.srcElement.value;
+	
+	//quita espacios en blanco
+	cadena=cadena.replace(/\s/g,'');
+	//quita comas
+	cadena=cadena.replace(/,/g,'');
+	//quita signo de $
+	cadena=cadena.replace(/\$/g,'');	
+	//quita porcentajes
+	cadena=cadena.replace(/%/g,'');
+	//quita Q
+	cadena=cadena.replace(/Q/g,'');
+	//quita q
+	cadena=cadena.replace(/q/g,'');
+	
+	e.srcElement.value=cadena;	
+	return true;
+
+}
